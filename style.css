@@ -1,0 +1,227 @@
+@media screen and (max-width: 480px) {
+  .contact {
+    position: relative;
+    top: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0044ff;
+    width: 80% !important;
+    height: 100% !important;
+  }
+}
+@font-face {
+  font-family: Montserrat;
+  src: url(font/Montserrat-Regular.ttf);
+}
+* {
+  font-family: Montserrat;
+}
+
+body {
+  color: #fff;
+  background-image: url(image/myWallpaper.png);
+}
+body main {
+  padding: 5%;
+}
+body main .fixed-top {
+  height: auto;
+  position: sticky;
+  top: 20vh;
+  z-index: 100;
+}
+body main figure {
+  display: flex;
+  justify-content: center;
+}
+body main .box {
+  margin-top: 2%;
+  padding: 2%;
+}
+body main .box .pic {
+  margin-top: 40px;
+}
+body main .box .dwl {
+  margin-top: 15px;
+}
+body main .box p {
+  text-align: center;
+  color: #fff;
+}
+body main .box h3 {
+  text-align: center;
+  color: #fff;
+}
+body main .box .inerbox {
+  padding: 5%;
+  background-color: #343a40;
+  box-shadow: 2px 2px 20px 2px black;
+  color: #fff;
+}
+body main .box .hobby-image {
+  position: relative;
+  overflow: hidden;
+  margin: 10% 10%;
+}
+body main .box .hobby-image img {
+  transition: transform 0.3s ease;
+}
+body main .box .hobby-image:hover img {
+  transform: scale(1.1);
+}
+body main .box .ctct {
+  background-color: #0044ff;
+  width: 45vw;
+  height: auto;
+  padding: 5%;
+  box-shadow: 2px 2px 20px 2px black;
+  color: #fff;
+}
+body main .box .ctct .inputbox input {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #fff;
+}
+body main .box .ctct .inputbox textarea {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #fff;
+}
+body main .box .hobby-text {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  background-color: rgba(31, 29, 29, 0.7);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  transition: opacity 0.3s ease;
+}
+body main .box .hobby-image:hover .hobby-text {
+  opacity: 1;
+}
+body main .accordion {
+  box-shadow: 2px 2px 20px 2px black;
+}
+body main .accordion .accordion-button {
+  background-color: #343a40;
+  color: #fff;
+}
+body main .accordion .accordion-body {
+  color: #fff;
+}
+body nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body nav .dropdown-menu {
+  height: auto;
+  color: #343a40;
+  width: 100vw;
+}
+body nav .modal-fullscreen {
+  display: flex;
+  justify-content: flex-start;
+}
+body nav ul {
+  height: 100%;
+}
+body nav ul .linkctn {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 75%;
+}
+body nav ul .linkctn:hover {
+  background-color: rgb(44, 31, 158);
+  border-bottom: 4px solid #fff;
+}
+body nav ul .linkctn:hover a {
+  color: #fff;
+}
+body footer {
+  padding: 5%;
+}
+body footer .btn-back-to-top {
+  height: 100px;
+}
+body footer .btn-back-to-top .boutton {
+  background-color: #343a40;
+}
+body footer .btn-back-to-top .boutton .back-to-top {
+  transition: all linear 3s ease;
+  transition-delay: 2s;
+  transition-duration: 4s;
+  -webkit-transition: all linear 3s ease;
+  -webkit-transition-duration: 5s;
+  -webkit-transition-delay: 5sc;
+}
+body footer .col-11 {
+  display: flex;
+  align-items: center;
+}
+
+.contactbody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.contactbody .contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0044ff;
+  width: 45vw;
+  height: 45vw;
+  padding: 2%;
+  position: relative;
+  top: 2vh;
+}
+.contactbody .contact .inputbox input,
+.contactbody .contact .inputbox textarea {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.contactbody .contact input:focus ~ label,
+.contactbody .contact input:valid ~ label {
+  top: -5px;
+}
+.contactbody .contact .inputbox label {
+  color: white;
+  transform: translateY(-50%);
+  font-size: 1em;
+  pointer-events: none;
+  transition: 5s;
+}
+.contactbody .contact .inputbox {
+  width: 100%;
+  height: 5%;
+  color: transparent;
+  border-bottom: 2px solid white;
+  position: relative;
+}
+.contactbody .inputbox > textarea::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.3764705882);
+}
+.contactbody .inputbox > textarea::placeholder {
+  color: rgba(255, 255, 255, 0.3764705882);
+}
+.contactbody .sbmt {
+  width: 55%;
+  padding: 5%;
+}/*# sourceMappingURL=style.css.map */
