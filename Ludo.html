@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ludo Game</title>
+    <link href="Ludo.css" rel="stylesheet">
+    <link href="Ludo_Dice.css" rel="stylesheet">
+</head>
+<body>
+    
+    <div id="game" >
+        <div id="board">
+            <div class="line">
+              <div id="red-box">
+                <div class="white-box">
+                  <div class="red circle">
+                    <img class="pawn" id="tst" src="ludo_game_images/icons8-z-pawn-red-60.png" alt="pawn">
+                  </div>
+                  <div class="red circle">
+                    <img class="pawn" src="ludo_game_images/icons8-z-pawn-red-60.png" alt="pawn">
+                  </div>
+                  <div class="red circle">
+                    <img class="pawn" src="ludo_game_images/icons8-z-pawn-red-60.png" alt="pawn">
+                  </div>
+                  <div class="red circle">
+                    <img class="pawn" src="Ludo_game_images/icons8-z-pawn-red-60.png" alt="pawn">
+                  </div>
+                </div>
+              </div>
+              <div class="cell-container">
+                <div class="line">
+                  <div class="cell"></div>
+                  <div class="cell">
+                    <img class="arrow" src="Ludo_game_images/icons8-down-30.png" alt="arrow">
+                  </div>
+                  <div class="cell"></div>
+                </div>
+                <div class="line">
+                  <div class="cell"></div>
+                  <div class="cell green"></div>
+                  <div class="cell green"></div>
+                </div>
+                <div class="line">
+                  <div class="cell">
+                    <img class="star-icon" src="Ludo_game_images/icons8-christmas-star-30-RED.png" alt="star-icon">
+                  </div>
+                  <div class="cell green"></div>
+                  <div class="cell"></div>
+                </div>
+                <div class="line">
+                  <div class="cell"></div>
+                  <div class="cell green"></div>
+                  <div class="cell"></div>
+                </div>
+                <div class="line">
+                  <div class="cell"></div>
+                  <div class="cell green"></div>
+                  <div class="cell"></div>
+                </div>
+                <div class="line">
+                  <div class="cell"></div>
+                  <div class="cell green"></div>
+                  <div class="cell"></div>
+                </div>
+              </div>
+              <div id="green-box">
+                <div class="white-box">
+                  <div class="green circle">
+                    <img class="pawn" src="Ludo_game_images/icons8-z-pawn-green-60.png" alt="pawn">
+                  </div>
+                  <div class="green circle">
+                    <img class="pawn" src="ludo_game_images/icons8-z-pawn-green-60.png" alt="pawn">
+                  </div>
+                  <div class="green circle">
+                    <img class="pawn" src="ludo_game_images/icons8-z-pawn-green-60.png" alt="pawn">
+                  </div>
+                  <div class="green circle">
+                    <img class="pawn" src="ludo_game_images/icons8-z-pawn-green-60.png" alt="pawn">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="line">
+              <div class="cell-container">
+                <div class="line">
+                  <div class="cell"></div>
+                  <div class="cell red"></div>
+                  <div class="cell"></div>
+                  <div class="cell"></div>
+                  <div class="cell"></div>
+                  <div class="cell"></div>
+                </div>
+                <div class="line">
+                  <div class="cell">
+                    <img class="arrow" src="Ludo_game_images/icons8-right-30.png" alt="arrow">
+                  </div>
+                  <div class="cell red"></div>
+                  <div class="cell red"></div>
+                  <div class="cell red"></div>
+                  <div class="cell red"></div>
+                  <div class="cell red"></div>
+                </div>
+                <div class="line">
+                  <div class="cell"></div>
+                  <div class="cell"></div>
+                  <div class="cell">
+                    <img class="star-icon" src="Ludo_game_images/icons8-christmas-star-30 -BLUE.png" alt="star-icon">
+                  </div>
+                  <div class="cell"></div>
+                  <div class="cell"></div>
+                  <div class="cell"></div>
+                </div>
+              </div>
+              <div class="destination"></div>
+              <div class="cell-container">
+                <div class="line">
+                  <div class="cell"></div>
+                  <div class="cell"></div>
+                  <div class="cell"></div>
+                  <div class="cell">
+                    <img class="star-icon" src="Ludo_game_images/icons8-christmas-star-30 -GREEN.png" alt="star-icon">
+                  </div>
+                  <div class="cell"></div>
+                  <div class="cell"></div>
+                </div>
+                <div class="line">
+                  <div class="cell yellow"></div>
+                  <div class="cell yellow"></div>
+                  <div class="cell yellow"></div>
+                  <div class="cell yellow"></div>
+                  <div class="cell yellow"></div>
+                  <div class="cell">
+                    <img class="arrow" src="Ludo_game_images/icons8-left-30.png" alt="arrow">
+                  </div>
+                </div>
+                <div class="line">
+                  <div class="cell"></div>
+                  <div class="cell"></div>
+                  <div class="cell"></div>
+                  <div class="cell"></div>
+                  <div class="cell yellow"></div>
+                  <div class="cell"></div>
+                </div>
+              </div>
+            </div>
+            <div class="line">
+              <div id="blue-box">
+                <div class="white-box">
+                  <div class="blue circle">
+                    <img class="pawn" src="ludo_game_images/icons8-z-pawn-blue-60.png" alt="pawn">
+                  </div>
+                  <div class="blue circle">
+                    <img class="pawn" src="ludo_game_images/icons8-z-pawn-blue-60.png" alt="pawn">
+                  </div>
+                  <div class="blue circle">
+                    <img class="pawn" src="ludo_game_images/icons8-z-pawn-blue-60.png" alt="pawn">
+                  </div>
+                  <div class="blue circle">
+                    <img class="pawn" src="ludo_game_images/icons8-z-pawn-blue-60.png" alt="pawn">
+                  </div>
+                </div>
+              </div>
+              <div class="cell-container">
+                <div class="line">
+                  <div class="cell"></div>
+                  <div class="cell blue"></div>
+                  <div class="cell"></div>
+                </div>
+                <div class="line">
+                  <div class="cell"></div>
+                  <div class="cell blue"></div>
+                  <div class="cell "></div>
+                </div>
+                <div class="line">
+                  <div class="cell"></div>
+                  <div class="cell blue"></div>
+                  <div class="cell"></div>
+                </div>
+                <div class="line">
+                  <div class="cell"></div>
+                  <div class="cell blue"></div>
+                  <div class="cell">
+                    <img class="star-icon" src="Ludo_game_images/icons8-christmas-star-30.png" alt="star-icon">                  
+                </div>
+                </div>
+                <div class="line">
+                  <div class="cell blue"></div>
+                  <div class="cell blue"></div>
+                  <div class="cell"></div>
+                </div>
+                <div class="line">
+                  <div class="cell"></div>
+                  <div class="cell">
+                    <img class="arrow" src="Ludo_game_images/icons8-up-30.png" alt="arrow">
+                  </div>
+                  <div class="cell"></div>
+                </div>
+              </div>
+              <div id="yellow-box">
+                <div class="white-box">
+                  <div class="yellow circle">
+                    <img class="pawn" src="Ludo_game_images/icons8-z-pawn-yellow-60.png" alt="pawn">
+                  </div>
+                  <div class="yellow circle">
+                    <img class="pawn" src="Ludo_game_images/icons8-z-pawn-yellow-60.png" alt="pawn">
+                  </div>
+                  <div class="yellow circle">
+                    <img class="pawn" src="Ludo_game_images/icons8-z-pawn-yellow-60.png" alt="pawn">
+                  </div>
+                  <div class="yellow circle">
+                    <img class="pawn" src="Ludo_game_images/icons8-z-pawn-yellow-60.png" alt="pawn">
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div id="dice-container">
+          <div class="dice-corner top-left">
+            <div id='dice1' class="dice dice-one">
+              <div id="dice-one-side-one" class='side one'>
+                <div class="dot one-1"></div>
+              </div>
+              <div id="dice-one-side-two" class='side two'>
+                <div class="dot two-1"></div>
+                <div class="dot two-2"></div>
+              </div>
+              <div id="dice-one-side-three" class='side three'>
+                <div class="dot three-1"></div>
+                <div class="dot three-2"></div>
+                <div class="dot three-3"></div>
+              </div>
+              <div id="dice-one-side-four" class='side four'>
+                <div class="dot four-1"></div>
+                <div class="dot four-2"></div>
+                <div class="dot four-3"></div>
+                <div class="dot four-4"></div>
+              </div>
+              <div id="dice-one-side-five" class='side five'>
+                <div class="dot five-1"></div>
+                <div class="dot five-2"></div>
+                <div class="dot five-3"></div>
+                <div class="dot five-4"></div>
+                <div class="dot five-5"></div>
+              </div>
+              <div id="dice-one-side-six" class='side six'>
+                <div class="dot six-1"></div>
+                <div class="dot six-2"></div>
+                <div class="dot six-3"></div>
+                <div class="dot six-4"></div>
+                <div class="dot six-5"></div>
+                <div class="dot six-6"></div>
+              </div>
+            </div>
+          </div>
+          <div class="dice-corner top-right">
+            <div id='dice2' class="dice dice-two">
+              <div id="dice-two-side-one" class='side one'>
+                <div class="dot one-1"></div>
+              </div>
+              <div id="dice-two-side-two" class='side two'>
+                <div class="dot two-1"></div>
+                <div class="dot two-2"></div>
+              </div>
+              <div id="dice-two-side-three" class='side three'>
+                <div class="dot three-1"></div>
+                <div class="dot three-2"></div>
+                <div class="dot three-3"></div>
+              </div>
+              <div id="dice-two-side-four" class='side four'>
+                <div class="dot four-1"></div>
+                <div class="dot four-2"></div>
+                <div class="dot four-3"></div>
+                <div class="dot four-4"></div>
+              </div>
+              <div id="dice-two-side-five" class='side five'>
+                <div class="dot five-1"></div>
+                <div class="dot five-2"></div>
+                <div class="dot five-3"></div>
+                <div class="dot five-4"></div>
+                <div class="dot five-5"></div>
+              </div>
+              <div id="dice-two-side-six" class='side six'>
+                <div class="dot six-1"></div>
+                <div class="dot six-2"></div>
+                <div class="dot six-3"></div>
+                <div class="dot six-4"></div>
+                <div class="dot six-5"></div>
+                <div class="dot six-6"></div>
+              </div>
+            </div> 
+          </div>
+          <div class="dice-corner bottom-left">
+            <div id='dice3' class="dice dice-three">
+              <div id="dice-three-side-one" class='side one'>
+                <div class="dot one-1"></div>
+              </div>
+              <div id="dice-three-side-two" class='side two'>
+                <div class="dot two-1"></div>
+                <div class="dot two-2"></div>
+              </div>
+              <div id="dice-three-side-three" class='side three'>
+                <div class="dot three-1"></div>
+                <div class="dot three-2"></div>
+                <div class="dot three-3"></div>
+              </div>
+              <div id="dice-three-side-four" class='side four'>
+                <div class="dot four-1"></div>
+                <div class="dot four-2"></div>
+                <div class="dot four-3"></div>
+                <div class="dot four-4"></div>
+              </div>
+              <div id="dice-three-side-five" class='side five'>
+                <div class="dot five-1"></div>
+                <div class="dot five-2"></div>
+                <div class="dot five-3"></div>
+                <div class="dot five-4"></div>
+                <div class="dot five-5"></div>
+              </div>
+              <div id="dice-three-side-six" class='side six'>
+                <div class="dot six-1"></div>
+                <div class="dot six-2"></div>
+                <div class="dot six-3"></div>
+                <div class="dot six-4"></div>
+                <div class="dot six-5"></div>
+                <div class="dot six-6"></div>
+              </div>
+            </div>
+          </div>
+          <div class="dice-corner bottom-right">
+            <div id='dice4' class="dice dice-four">
+              <div id="dice-four-side-one" class='side one'>
+                <div class="dot one-1"></div>
+              </div>
+              <div id="dice-four-side-two" class='side two'>
+                <div class="dot two-1"></div>
+                <div class="dot two-2"></div>
+              </div>
+              <div id="dice-four-side-three" class='side three'>
+                <div class="dot three-1"></div>
+                <div class="dot three-2"></div>
+                <div class="dot three-3"></div>
+              </div>
+              <div id="dice-four-side-four" class='side four'>
+                <div class="dot four-1"></div>
+                <div class="dot four-2"></div>
+                <div class="dot four-3"></div>
+                <div class="dot four-4"></div>
+              </div>
+              <div id="dice-four-side-five" class='side five'>
+                <div class="dot five-1"></div>
+                <div class="dot five-2"></div>
+                <div class="dot five-3"></div>
+                <div class="dot five-4"></div>
+                <div class="dot five-5"></div>
+              </div>
+              <div id="dice-four-side-six" class='side six'>
+                <div class="dot six-1"></div>
+                <div class="dot six-2"></div>
+                <div class="dot six-3"></div>
+                <div class="dot six-4"></div>
+                <div class="dot six-5"></div>
+                <div class="dot six-6"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <button onclick="openFullscreen();">Start Game</button>
+    
+    <script src="Ludo.js"></script>
+</body>
+</html>
